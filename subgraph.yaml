@@ -8,11 +8,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ENSRegistry
-    network: mainnet
+    network: goerli
     source:
       address: '0xcdf0caD9452d83ca3BDb03fd4e26275F2E712E43'
       abi: EnsRegistry
-      startBlock: 0
+      startBlock: 8455999
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -36,11 +36,11 @@ dataSources:
           handler: handleNewTTL
   - kind: ethereum/contract
     name: ENSRegistryOld
-    network: mainnet
+    network: goerli
     source:
       address: '0xcdf0caD9452d83ca3BDb03fd4e26275F2E712E43'
       abi: EnsRegistry
-      startBlock: 0
+      startBlock: 8455999
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -64,7 +64,7 @@ dataSources:
           handler: handleNewTTLOldRegistry
   - kind: ethereum/contract
     name: Resolver
-    network: mainnet
+    network: goerli
     source:
       abi: Resolver
     mapping:
@@ -112,11 +112,11 @@ dataSources:
           handler: handleVersionChanged
   - kind: ethereum/contract
     name: BaseRegistrar
-    network: mainnet
+    network: goerli
     source:
       address: '0x3f7E94Da6Abc6cf3e45caF20caa313E59A431B31'
       abi: BaseRegistrar
-      startBlock: 0
+      startBlock: 8456024
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -139,11 +139,11 @@ dataSources:
           handler: handleNameTransferred
   - kind: ethereum/contract
     name: EthRegistrarControllerOld
-    network: mainnet
+    network: goerli
     source:
       address: '0x3f7E94Da6Abc6cf3e45caF20caa313E59A431B31'
       abi: EthRegistrarControllerOld
-      startBlock: 9380471
+      startBlock: 8456024
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -163,11 +163,11 @@ dataSources:
           handler: handleNameRenewedByController
   - kind: ethereum/contract
     name: EthRegistrarController
-    network: mainnet
+    network: goerli
     source:
       abi: EthRegistrarController
       address: '0x949cfa4105e21854f4a0563f5bFeCb4b42a4d963'
-      startBlock: 0
+      startBlock: 8456330
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -187,10 +187,11 @@ dataSources:
           handler: handleNameRenewedByController
   - kind: ethereum/contract
     name: NameWrapper
-    network: mainnet
+    network: goerli
     source:
       abi: NameWrapper
       address: '0x216127941e7D5A64D5D17Af5bA6b6a92c1911E7D'
+      startBlock: 8456325
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
